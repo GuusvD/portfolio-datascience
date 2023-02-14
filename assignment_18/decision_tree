@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<IMDB_Rating &le; 8.55<br/>squared_error = 126742436031.783<br/>samples = 497<br/>value = 355422.372>, fillcolor="#fdf4ee"] ;
+1 [label=<IMDB_Rating &le; 8.15<br/>squared_error = 74280812619.218<br/>samples = 477<br/>value = 312823.428>, fillcolor="#fef8f4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<IMDB_Rating &le; 7.95<br/>squared_error = 51982856459.961<br/>samples = 401<br/>value = 260965.289>, fillcolor="#fefdfb"] ;
+1 -> 2 ;
+3 [label=<squared_error = 36925566894.556<br/>samples = 285<br/>value = 232155.849>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label=<squared_error = 81927809614.748<br/>samples = 116<br/>value = 331747.103>, fillcolor="#fdf6f1"] ;
+2 -> 4 ;
+5 [label=<Meta_score &le; 73.0<br/>squared_error = 102874593810.778<br/>samples = 76<br/>value = 586443.342>, fillcolor="#f9e0cf"] ;
+1 -> 5 ;
+6 [label=<squared_error = 60152925039.474<br/>samples = 21<br/>value = 828348.381>, fillcolor="#f4cbae"] ;
+5 -> 6 ;
+7 [label=<squared_error = 88312188227.549<br/>samples = 55<br/>value = 494079.6>, fillcolor="#fae8db"] ;
+5 -> 7 ;
+8 [label=<Meta_score &le; 95.0<br/>squared_error = 302447102817.26<br/>samples = 20<br/>value = 1371407.2>, fillcolor="#eb9c64"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<IMDB_Rating &le; 8.75<br/>squared_error = 241520723803.543<br/>samples = 17<br/>value = 1502008.529>, fillcolor="#e89152"] ;
+8 -> 9 ;
+10 [label=<squared_error = 84334796492.889<br/>samples = 6<br/>value = 1165754.333>, fillcolor="#eeae80"] ;
+9 -> 10 ;
+11 [label=<squared_error = 231945922115.173<br/>samples = 11<br/>value = 1685419.909>, fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label=<IMDB_Rating &le; 8.8<br/>squared_error = 3332088006.0<br/>samples = 3<br/>value = 631333.0>, fillcolor="#f8dcc9"] ;
+8 -> 12 ;
+13 [label=<squared_error = 2430391401.0<br/>samples = 2<br/>value = 602077.0>, fillcolor="#f8dfcd"] ;
+12 -> 13 ;
+14 [label=<squared_error = 0.0<br/>samples = 1<br/>value = 689845.0>, fillcolor="#f7d7c1"] ;
+12 -> 14 ;
+}
